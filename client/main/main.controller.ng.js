@@ -1,7 +1,61 @@
 'use strict'
 
+//var Users = new Mongo.Collection.get('users');
+//console.log(Users.find({}, { sort: { createdAt: -1 } }));
 angular.module('testYoApp')
 .controller('MainCtrl', function($scope, $meteor) {
+  /*$scope.$meteorSubscribe('users');
+
+  $scope.users = $meteor.collection( function() {
+      return Users.find({}, { sort: { createdAt: -1 } })
+    }
+  );*/
+
+      $scope.attaquer = function () {
+      $meteor.call('attaquer');
+    };
+  //console.log($scope.users);
+  /*
+  //$scope.users = $meteor.collection('users').find();/*$meteor.collection('users', function() {
+      users.find()
+        //return Users.find($scope.getReactively('query'), { sort: { createdAt: -1 } })
+      }
+    );*/
+
+  //Users.find//$meteor.collection(users);
+/*
+  $scope.attaquer = function() {
+    alert('lol');
+    //return Things.find({}, {sort:$scope.getReactively('sort')});
+  };*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   $scope.page = 1;
   $scope.perPage = 3;
   $scope.sort = {name_sort : 1};

@@ -2,7 +2,8 @@ angular.module('testYoApp', [
   'angular-meteor',
   'ui.router',
   'ui.bootstrap',
-  'angularUtils.directives.dirPagination'
+  'angularUtils.directives.dirPagination',
+  'accounts.ui'
 ]);
 
 onReady = function() {

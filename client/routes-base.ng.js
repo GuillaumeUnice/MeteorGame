@@ -16,3 +16,13 @@ angular.module('testYoApp')
     }
   });
 }]);
+
+
+    Accounts._loginButtonsSession.set('dropdownVisible', true);
+    $(".login-close-text").hide();      
+
+  Accounts.ui.config({
+
+    passwordSignupFields: "USERNAME_ONLY"
+
+  });
